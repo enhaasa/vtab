@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted, watch } from 'vue';
+import { ref, onMounted } from 'vue';
 import type { TReceipt } from '@/shared/types/TReceipt';
 import ReceiptPage from '@/assets/pages/Receipt/ReceiptPage.vue';
 import SearchPage from '@/assets/pages/Search/SearchPage.vue';
@@ -12,15 +12,18 @@ const receipt = ref<TReceipt | null>(null);
 onMounted(() => {
     const params = new URLSearchParams(window.location.search);
     const id = Number(params.get('id'));
+    const env = params.get('env') || 'live';
+
+    console.log(env)
 
     if (id) {
         searchID.value = id;
-        fetchReceipt(id);
+        fetchReceipt(id, env);
     }
 });
 
-async function fetchReceipt(id: number) {
-    const data = await Kiwi.getReceipt(id);
+async function fetchReceipt(id: number, env: string) {
+    const data = await Kiwi.getReceipt(id, env);
     
     if (!data) {
         noresult.value = true; 
