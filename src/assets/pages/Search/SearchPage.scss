@@ -1,0 +1,51 @@
+.SearchPage {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .noresult {
+        display: flex;
+        justify-content: center;
+
+        & .text {
+            color: rgb(107, 0, 0);
+            background: rgba(255, 95, 95, .2);
+            border: 1px solid rgba(153, 5, 5, 0.4);
+            box-shadow: 0 0 4px rgb(0, 0, 0, .8);
+            font-weight: bold;
+            text-align: center;
+            padding: 5px 15px;
+            margin: 15px;
+            font-size: 1.2em;
+        }
+    }
+
+    & .search {
+        display: flex;
+        justify-content: center;
+
+        & form {
+
+            & input {
+                background: #222;
+                border: 1px solid #111;
+                color: white;
+                font-size: 3em;
+                text-align: center;
+                padding: 5px;
+                border-radius: 50px;
+                box-shadow: 0 0 8px rgb(0, 0, 0, .8);
+                width: 250px;
+                &:focus {
+                    outline: 1px solid white;
+                }
+
+                &::placeholder {
+                    color: grey;
+                }
+            }
+        }
+    }
+}

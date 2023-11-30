@@ -1,5 +1,10 @@
 <script setup lang="ts">
-import Receipt from './receipt/Receipt.vue';
+import Receipt from './Receipt/Receipt.vue';
+import type { TReceipt } from '@/shared/types/TReceipt';
+
+defineProps<{
+        receipt: TReceipt
+    }>();
 </script>
 
 <template>
@@ -8,15 +13,14 @@ import Receipt from './receipt/Receipt.vue';
             <div class="paper-clip">
                 <img src="./../../images/paper-clip.webp" alt="Paper Clip"/>
             </div>
-            <Receipt />
+            <Receipt :receipt="receipt" />
             <div class="sleeve">
-                <img src="./../../images/sleeve.png" alt="sleeve"/>
+                <img src="./../../images/sleeve.webp" alt="sleeve"/>
             </div>
         </div>
-
     </div>
 </template>
 
-<style lang="scss" scoped>
-@import 'ReceiptPage.scss';
+<style scoped lang="scss">
+@import './ReceiptPage.scss';
 </style>

@@ -1,16 +1,11 @@
 <script setup lang="ts">
-  import HeaderComponent from './assets/components/Header/HeaderComponent.vue';
+  import PageController from './assets/components/PageController/PageController.vue';
   import FooterComponent from './assets/components/Footer/FooterComponent.vue';
-
-  import ReceiptPage from './assets/pages/receipt/ReceiptPage.vue';
 </script>
 
 <template>
   <div class="wrapper">
-    <HeaderComponent />
-
-    <ReceiptPage />
-
+    <PageController />
     <FooterComponent />
   </div>
 </template>

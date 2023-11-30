@@ -1,7 +1,6 @@
 .ReceiptPage { 
-    background-image: url('./../../images/background-dimmed.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
+
+    height: 100%;
     
     overflow-x: auto;
     position: relative;
@@ -36,10 +35,10 @@
             margin-top: -10px;
             
             & img {
-                width: 320px;
-                height: 420px;
+                width: 350px;
+                height: 500px;
                 transform: rotate(4deg);
-                margin-left: 10px;
+                margin-left: -10px;
             }
         }
     
