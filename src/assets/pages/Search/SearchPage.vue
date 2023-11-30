@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
 
-const props = defineProps({
+defineProps({
   noresult: Boolean,
   fetchReceipt: Function
 });
@@ -17,7 +17,7 @@ const inputValue = ref('');
             </div>
 
             <div class="search">
-                <form @submit.prevent="fetchReceipt(inputValue)">
+                <form @submit.prevent="fetchReceipt?.(inputValue)">
                     <input 
                         v-model="inputValue"
                         type="text" 
