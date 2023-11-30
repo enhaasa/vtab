@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted, watch } from 'vue';
 import type { TReceipt } from '@/shared/types/TReceipt';
-import ReceiptPage from '@/assets/pages/receipt/ReceiptPage.vue';
+import ReceiptPage from '@/assets/pages/Receipt/ReceiptPage.vue';
 import SearchPage from '@/assets/pages/Search/SearchPage.vue';
 import Kiwi from '@/kiwi';
 
