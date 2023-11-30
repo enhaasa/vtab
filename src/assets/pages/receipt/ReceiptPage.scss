@@ -1,0 +1,51 @@
+.ReceiptPage { 
+    background-image: url('./../../images/background-dimmed.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    overflow-x: auto;
+    position: relative;
+    
+    & .receipt-wrapper {
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%, -50%);
+        width: 290px;
+        height: 290px;
+        
+        position: absolute; 
+        z-index: 0;
+        
+        & * {
+            position: absolute;
+        }
+
+        & .paper-clip {
+            z-index: 3;
+
+            & img {
+                width: 20px;
+                margin-left: 235px;
+                margin-top: -18.2px;
+                transform: rotate(17deg);
+            }
+        }
+
+        & .sleeve {
+            z-index: 1;
+            margin-top: -10px;
+            
+            & img {
+                width: 320px;
+                height: 420px;
+                transform: rotate(4deg);
+                margin-left: 10px;
+            }
+        }
+    
+        & .Receipt {
+            z-index: 2;
+        }
+
+    }
+}
