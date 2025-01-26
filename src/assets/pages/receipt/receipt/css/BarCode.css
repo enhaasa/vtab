@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap" rel="stylesheet"');
+.BarCode {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.BarCode .link {
+  cursor: pointer;
+  font-family: "Libre Barcode 39 Text", cursive;
+  font-size: clamp(1rem, 2.5em, 2rem);
+  background: none;
+  border: none;
+  text-decoration: none;
+  color: black;
+  white-space: nowrap;
+}
+.BarCode .link:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  transform: translateX(-3px) translateY(-5px);
+  background: rgba(255, 0, 0, 0);
+  transition: 500ms;
+}
+.BarCode .link:visited {
+  color: black;
+}/*# sourceMappingURL=BarCode.css.map */

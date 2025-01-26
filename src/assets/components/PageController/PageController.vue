@@ -14,8 +14,6 @@ onMounted(() => {
     const id = Number(params.get('id'));
     const env = params.get('env') || 'live';
 
-    console.log(env)
-
     if (id) {
         searchID.value = id;
         fetchReceipt(id, env);

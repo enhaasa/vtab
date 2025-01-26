@@ -1,0 +1,39 @@
+.ReceiptPage {
+  height: 100%;
+  overflow-x: auto;
+  position: relative;
+}
+.ReceiptPage .receipt-wrapper {
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  width: 290px;
+  height: 290px;
+  position: absolute;
+  z-index: 0;
+}
+.ReceiptPage .receipt-wrapper * {
+  position: absolute;
+}
+.ReceiptPage .receipt-wrapper .paper-clip {
+  z-index: 3;
+}
+.ReceiptPage .receipt-wrapper .paper-clip img {
+  width: 20px;
+  margin-left: 235px;
+  margin-top: -18.2px;
+  transform: rotate(17deg);
+}
+.ReceiptPage .receipt-wrapper .sleeve {
+  z-index: 1;
+  margin-top: -10px;
+}
+.ReceiptPage .receipt-wrapper .sleeve img {
+  width: 350px;
+  height: 500px;
+  transform: rotate(4deg);
+  margin-left: -10px;
+}
+.ReceiptPage .receipt-wrapper .Receipt {
+  z-index: 2;
+}/*# sourceMappingURL=ReceiptPage.css.map */

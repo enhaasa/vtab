@@ -1,11 +1,11 @@
 <script setup lang="ts">
-defineProps(['name', 'link']);
+defineProps(['name', 'link'])
 </script>
 
 <template>
-    <div class="BarCode">
-        <a class="link" :href="link" target="_blank">{{ name }}</a>
-    </div>
+  <div class="BarCode">
+    <a class="link" :href="link" target="_blank">{{ name }}</a>
+  </div>
 </template>
 
 <style scoped lang="scss">

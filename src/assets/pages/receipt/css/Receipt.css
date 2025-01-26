@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+.Receipt {
+  background: rgb(247, 247, 247);
+  background-image: url("./../../../images/paper-texture-2.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  display: grid;
+  gap: 3px;
+  width: 260px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  border-top-left-radius: 20px 2px;
+  border-bottom-left-radius: 15px 115px;
+  border-bottom-right-radius: 105px 10px;
+}
+.Receipt .divider {
+  border-top: 1px solid rgb(190, 190, 190);
+  margin-top: 5px;
+  padding-top: 5px;
+}
+.Receipt header {
+  text-align: center;
+}
+.Receipt header h1 {
+  margin: 0;
+  font-family: "Dancing Script";
+}
+.Receipt header div {
+  font-size: 14px;
+}
+.Receipt .item-list {
+  z-index: 0;
+  border-top: none;
+  padding-top: 0;
+}
+.Receipt .item-list .title {
+  color: #373737;
+  font-size: 14px;
+  text-align: center;
+  z-index: 2;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr auto 1fr;
+  grid-gap: 15px;
+}
+.Receipt .item-list .title span {
+  border-top: 1px solid rgb(190, 190, 190);
+  margin-top: 8px;
+}
+.Receipt .item-list table {
+  width: 100%;
+}
+.Receipt .item-list table tr td {
+  max-width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.Receipt .item-list table tr > :last-child {
+  text-align: right;
+}
+.Receipt .seating-info {
+  display: flex;
+  justify-content: space-between;
+}
+.Receipt .total {
+  display: flex;
+  justify-content: end;
+  gap: 5px;
+}
+.Receipt .total .amount {
+  font-weight: bold;
+}/*# sourceMappingURL=Receipt.css.map */
