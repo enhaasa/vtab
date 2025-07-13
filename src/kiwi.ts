@@ -6,8 +6,8 @@ type TReceiptData = {
 }
 
 export default class Kiwi {
-  private static readonly stage = 'https://kiwi-stage-2124467c543e.herokuapp.com/'
-  private static readonly live = 'https://kiwi-live-ff816c7efb64.herokuapp.com/'
+  private static readonly stage = 'https://kiwi-live.ngrok.app/'
+  private static readonly live = 'https://kiwi-live.ngrok.app/'
 
   public static async getReceipt(id: number, env: string): Promise<TReceiptData | null> {
     const url = `${env === 'stage' ? this.stage : this.live}api/receipt?id=${id}`
